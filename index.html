@@ -1,6 +1,203 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Mount Wilson Ventures -- NEW SITE COMING SOON</h1>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mount Wilson Ventures</title>
+<meta name="description" content="Mount Wilson Ventures invests in early-stage companies in the physical and data sciences." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --ink:    #1c1a17;
+    --bg:     #f3efe7;
+    --panel:  #faf8f3;
+    --muted:  #847b6d;
+    --line:   #ddd6c9;
+    --cyan:   #1f93c7;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Courier Prime", "Courier New", monospace;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:inherit; text-decoration:none; }
+
+  .wrap{ max-width:880px; margin:0 auto; padding:0 32px; }
+
+  header{
+    padding:40px 0 36px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:24px;
+  }
+  .brand{ display:flex; align-items:center; }
+  .brand-logo{ display:block; height:68px; width:auto; }
+  nav{ display:flex; gap:28px; font-size:13px; letter-spacing:.03em; }
+  nav a{ color:var(--muted); transition:color .2s ease; }
+  nav a:hover{ color:var(--cyan); }
+  @media (max-width:640px){ nav{ display:none; } }
+
+  .hero{ padding:64px 0 80px; border-top:1px solid var(--line); }
+  .hero h1{
+    font-weight:400;
+    font-size:clamp(24px, 3.4vw, 36px);
+    line-height:1.4;
+    letter-spacing:-.01em;
+    max-width:24ch;
+  }
+
+  section{ padding:56px 0; border-top:1px solid var(--line); }
+  .label{
+    font-size:12px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:32px;
+  }
+  section p.body{
+    font-size:clamp(16px, 1.6vw, 19px);
+    line-height:1.7;
+    max-width:52ch;
+  }
+
+  .companies{ display:flex; flex-direction:column; }
+  .company{
+    display:grid;
+    grid-template-columns: 210px 1fr auto;
+    gap:24px;
+    align-items:baseline;
+    padding:20px 0;
+    border-top:1px solid var(--line);
+  }
+  .company:first-child{ border-top:none; padding-top:0; }
+  .company .nm{ font-weight:700; font-size:16px; letter-spacing:.01em; }
+  .company .ds{ color:var(--muted); font-size:14px; line-height:1.6; }
+  .company .go{ color:var(--muted); font-size:13px; transition:color .2s ease; white-space:nowrap; }
+  .company:hover .nm{ color:var(--cyan); }
+  .company:hover .go{ color:var(--cyan); }
+  @media (max-width:640px){
+    .company{ grid-template-columns:1fr; gap:6px; }
+    .company .go{ display:none; }
+  }
+
+  .ppl{ display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+  .person h3{ font-weight:700; font-size:16px; margin-bottom:6px; }
+  .person a.li{ font-size:13px; color:var(--cyan); letter-spacing:.02em; }
+  .person a.li:hover{ text-decoration:underline; }
+  @media (max-width:640px){ .ppl{ grid-template-columns:1fr; gap:28px; } }
+
+  footer{
+    padding:52px 0 60px; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:flex-end;
+    flex-wrap:wrap; gap:24px;
+  }
+  footer .col h4{
+    font-size:12px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--muted); font-weight:400; margin-bottom:12px;
+  }
+  footer .col a, footer .col p{ font-size:14px; color:var(--ink); display:block; line-height:1.8; }
+  footer .col a:hover{ color:var(--cyan); }
+  footer .fine{ font-size:12px; color:var(--muted); max-width:34ch; line-height:1.6; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <a class="brand" href="#" aria-label="Mount Wilson Ventures">
+      <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="244.8" height="115.2" viewBox="0 0 244.8 115.2"><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 115.652344 26.292969 L 118.90625 26.292969 L 124.199219 34.515625 L 129.488281 26.292969 L 132.746094 26.292969 L 132.746094 43.6875 L 129.6875 43.6875 L 129.6875 31.214844 L 124.199219 39.414062 L 124.097656 39.414062 L 118.65625 31.261719 L 118.65625 43.6875 L 115.652344 43.6875 Z M 115.652344 26.292969 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 150.8125 35.039062 L 150.8125 34.988281 C 150.8125 31.609375 148.351562 28.804688 144.898438 28.804688 C 141.445312 28.804688 139.035156 31.5625 139.035156 34.941406 L 139.035156 34.988281 C 139.035156 38.367188 141.496094 41.175781 144.945312 41.175781 C 148.402344 41.175781 150.8125 38.417969 150.8125 35.039062 M 135.828125 35.039062 L 135.828125 34.988281 C 135.828125 30.09375 139.605469 25.996094 144.945312 25.996094 C 150.289062 25.996094 154.015625 30.042969 154.015625 34.941406 L 154.015625 34.988281 C 154.015625 39.886719 150.238281 43.984375 144.898438 43.984375 C 139.554688 43.984375 135.828125 39.933594 135.828125 35.039062 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 156.828125 36.304688 L 156.828125 26.292969 L 159.882812 26.292969 L 159.882812 36.183594 C 159.882812 39.414062 161.546875 41.152344 164.28125 41.152344 C 166.988281 41.152344 168.652344 39.511719 168.652344 36.304688 L 168.652344 26.292969 L 171.710938 26.292969 L 171.710938 36.15625 C 171.710938 41.351562 168.777344 43.960938 164.230469 43.960938 C 159.710938 43.960938 156.828125 41.351562 156.828125 36.304688 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 175.289062 26.292969 L 178.121094 26.292969 L 187.441406 38.320312 L 187.441406 26.292969 L 190.445312 26.292969 L 190.445312 43.6875 L 187.886719 43.6875 L 178.296875 31.3125 L 178.296875 43.6875 L 175.289062 43.6875 Z M 175.289062 26.292969 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 198.574219 29.125 L 193.058594 29.125 L 193.058594 26.292969 L 207.171875 26.292969 L 207.171875 29.125 L 201.65625 29.125 L 201.65625 43.6875 L 198.574219 43.6875 Z M 198.574219 29.125 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 114.308594 52.722656 L 117.613281 52.722656 L 121.761719 65.617188 L 126.035156 52.671875 L 128.621094 52.671875 L 132.894531 65.617188 L 137.042969 52.722656 L 140.25 52.722656 L 134.1875 70.238281 L 131.550781 70.238281 L 127.28125 57.742188 L 123.003906 70.238281 L 120.371094 70.238281 Z M 114.308594 52.722656 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 142.9375 52.722656 L 145.992188 52.722656 L 145.992188 70.113281 L 142.9375 70.113281 Z M 142.9375 52.722656 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 150.015625 52.722656 L 153.074219 52.722656 L 153.074219 67.332031 L 162.21875 67.332031 L 162.21875 70.113281 L 150.015625 70.113281 Z M 150.015625 52.722656 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 163.609375 67.582031 L 165.449219 65.394531 C 167.113281 66.835938 168.777344 67.65625 170.941406 67.65625 C 172.828125 67.65625 174.019531 66.785156 174.019531 65.46875 L 174.019531 65.417969 C 174.019531 64.175781 173.324219 63.503906 170.09375 62.761719 C 166.394531 61.867188 164.304688 60.773438 164.304688 57.566406 L 164.304688 57.519531 C 164.304688 54.535156 166.789062 52.472656 170.246094 52.472656 C 172.777344 52.472656 174.792969 53.242188 176.554688 54.660156 L 174.914062 56.96875 C 173.351562 55.800781 171.785156 55.179688 170.195312 55.179688 C 168.40625 55.179688 167.363281 56.101562 167.363281 57.246094 L 167.363281 57.292969 C 167.363281 58.636719 168.15625 59.230469 171.488281 60.027344 C 175.164062 60.921875 177.078125 62.238281 177.078125 65.121094 L 177.078125 65.171875 C 177.078125 68.425781 174.519531 70.363281 170.867188 70.363281 C 168.207031 70.363281 165.699219 69.445312 163.609375 67.582031 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 194.273438 61.46875 L 194.273438 61.417969 C 194.273438 58.039062 191.8125 55.230469 188.359375 55.230469 C 184.90625 55.230469 182.496094 57.988281 182.496094 61.367188 L 182.496094 61.417969 C 182.496094 64.796875 184.957031 67.605469 188.410156 67.605469 C 191.863281 67.605469 194.273438 64.847656 194.273438 61.46875 M 179.289062 61.46875 L 179.289062 61.417969 C 179.289062 56.523438 183.066406 52.421875 188.410156 52.421875 C 193.75 52.421875 197.476562 56.472656 197.476562 61.367188 L 197.476562 61.417969 C 197.476562 66.3125 193.703125 70.414062 188.359375 70.414062 C 183.015625 70.414062 179.289062 66.363281 179.289062 61.46875 "/><path fill-rule="nonzero" fill="rgb(12.940979%, 12.156677%, 11.764526%)" fill-opacity="1" d="M 200.5625 52.722656 L 203.394531 52.722656 L 212.710938 64.75 L 212.710938 52.722656 L 215.71875 52.722656 L 215.71875 70.113281 L 213.160156 70.113281 L 203.570312 57.742188 L 203.570312 70.113281 L 200.5625 70.113281 Z M 200.5625 52.722656 "/><path fill-rule="nonzero" fill="rgb(47.058105%, 47.842407%, 47.842407%)" fill-opacity="1" d="M 115.660156 81.761719 L 117.6875 81.761719 L 120.832031 89.78125 L 123.964844 81.761719 L 125.945312 81.761719 L 121.609375 92.269531 L 119.996094 92.269531 Z M 115.660156 81.761719 "/><path fill-rule="nonzero" fill="rgb(47.058105%, 47.842407%, 47.842407%)" fill-opacity="1" d="M 130.71875 81.761719 L 138.453125 81.761719 L 138.453125 83.398438 L 132.554688 83.398438 L 132.554688 86.113281 L 137.785156 86.113281 L 137.785156 87.753906 L 132.554688 87.753906 L 132.554688 90.554688 L 138.527344 90.554688 L 138.527344 92.191406 L 130.71875 92.191406 Z M 130.71875 81.761719 "/><path fill-rule="nonzero" fill="rgb(47.058105%, 47.842407%, 47.842407%)" fill-opacity="1" d="M 143.691406 81.761719 L 145.390625 81.761719 L 150.980469 88.972656 L 150.980469 81.761719 L 152.785156 81.761719 L 152.785156 92.191406 L 151.246094 92.191406 L 145.496094 84.769531 L 145.496094 92.191406 L 143.691406 92.191406 Z M 143.691406 81.761719 "/><path fill-rule="nonzero" fill="rgb(47.058105%, 47.842407%, 47.842407%)" fill-opacity="1" d="M 161.015625 83.460938 L 157.707031 83.460938 L 157.707031 81.761719 L 166.171875 81.761719 L 166.171875 83.460938 L 162.863281 83.460938 L 162.863281 92.195312 L 161.015625 92.195312 Z M 161.015625 83.460938 "/><path fill-rule="nonzero" fill="rgb(47.058105%, 47.842407%, 47.842407%)" fill-opacity="1" d="M 170.933594 87.765625 L 170.933594 81.761719 L 172.765625 81.761719 L 172.765625 87.691406 C 172.765625 89.628906 173.765625 90.671875 175.402344 90.671875 C 177.027344 90.671875 178.027344 89.691406 178.027344 87.765625 L 178.027344 81.761719 L 179.859375 81.761719 L 179.859375 87.675781 C 179.859375 90.792969 178.101562 92.355469 175.371094 92.355469 C 172.660156 92.355469 170.933594 90.792969 170.933594 87.765625 "/><path fill-rule="nonzero" fill="rgb(47.058105%, 47.842407%, 47.842407%)" fill-opacity="1" d="M 189.882812 86.933594 C 191.191406 86.933594 192.027344 86.246094 192.027344 85.1875 L 192.027344 85.160156 C 192.027344 84.042969 191.222656 83.429688 189.867188 83.429688 L 187.195312 83.429688 L 187.195312 86.933594 Z M 185.363281 81.761719 L 190.015625 81.761719 C 191.328125 81.761719 192.355469 82.148438 193.027344 82.804688 C 193.578125 83.371094 193.890625 84.144531 193.890625 85.054688 L 193.890625 85.085938 C 193.890625 86.796875 192.863281 87.828125 191.402344 88.242188 L 194.21875 92.195312 L 192.058594 92.195312 L 189.492188 88.558594 L 187.195312 88.558594 L 187.195312 92.195312 L 185.363281 92.195312 Z M 185.363281 81.761719 "/><path fill-rule="nonzero" fill="rgb(47.058105%, 47.842407%, 47.842407%)" fill-opacity="1" d="M 199.125 81.761719 L 206.863281 81.761719 L 206.863281 83.398438 L 200.960938 83.398438 L 200.960938 86.113281 L 206.191406 86.113281 L 206.191406 87.753906 L 200.960938 87.753906 L 200.960938 90.554688 L 206.9375 90.554688 L 206.9375 92.191406 L 199.125 92.191406 Z M 199.125 81.761719 "/><path fill-rule="nonzero" fill="rgb(47.058105%, 47.842407%, 47.842407%)" fill-opacity="1" d="M 211.398438 90.671875 L 212.5 89.363281 C 213.5 90.226562 214.496094 90.71875 215.792969 90.71875 C 216.929688 90.71875 217.644531 90.195312 217.644531 89.40625 L 217.644531 89.375 C 217.644531 88.628906 217.226562 88.230469 215.285156 87.78125 C 213.066406 87.246094 211.816406 86.589844 211.816406 84.667969 L 211.816406 84.636719 C 211.816406 82.847656 213.304688 81.613281 215.378906 81.613281 C 216.898438 81.613281 218.105469 82.074219 219.164062 82.921875 L 218.179688 84.308594 C 217.238281 83.609375 216.300781 83.234375 215.347656 83.234375 C 214.273438 83.234375 213.648438 83.789062 213.648438 84.472656 L 213.648438 84.503906 C 213.648438 85.308594 214.125 85.667969 216.121094 86.140625 C 218.328125 86.679688 219.476562 87.46875 219.476562 89.199219 L 219.476562 89.226562 C 219.476562 91.179688 217.941406 92.34375 215.75 92.34375 C 214.15625 92.34375 212.652344 91.792969 211.398438 90.671875 "/><path fill-rule="nonzero" fill="rgb(15.293884%, 66.667175%, 88.235474%)" fill-opacity="1" d="M 94.207031 82.796875 C 94.207031 88.027344 89.957031 92.277344 84.726562 92.277344 L 35.769531 92.277344 C 30.539062 92.277344 26.285156 88.027344 26.285156 82.796875 L 26.285156 34.632812 C 26.285156 29.402344 30.539062 25.152344 35.769531 25.152344 L 84.726562 25.152344 C 89.957031 25.152344 94.207031 29.402344 94.207031 34.632812 Z M 84.726562 21.261719 L 35.769531 21.261719 C 28.394531 21.261719 22.394531 27.257812 22.394531 34.632812 L 22.394531 82.796875 C 22.394531 90.171875 28.394531 96.167969 35.769531 96.167969 L 84.726562 96.167969 C 92.101562 96.167969 98.097656 90.171875 98.097656 82.796875 L 98.097656 34.632812 C 98.097656 27.257812 92.101562 21.261719 84.726562 21.261719 "/><path fill-rule="nonzero" fill="rgb(15.293884%, 66.667175%, 88.235474%)" fill-opacity="1" d="M 75.625 38.449219 C 74.101562 36.167969 71.910156 34.859375 69.601562 34.855469 C 67.292969 34.855469 65.089844 36.175781 63.558594 38.46875 L 60.253906 43.433594 L 56.933594 38.449219 C 55.410156 36.167969 53.21875 34.859375 50.914062 34.855469 C 48.601562 34.855469 46.398438 36.175781 44.867188 38.46875 L 33.675781 55.265625 C 33.625 55.34375 33.585938 55.425781 33.546875 55.507812 L 38.097656 55.507812 L 48.039062 40.585938 C 48.863281 39.351562 49.882812 38.671875 50.914062 38.671875 C 51.933594 38.671875 52.945312 39.34375 53.757812 40.5625 L 57.960938 46.871094 L 52.367188 55.265625 C 52.316406 55.34375 52.277344 55.425781 52.238281 55.507812 L 56.789062 55.507812 L 60.253906 50.308594 L 63.714844 55.507812 L 68.257812 55.507812 C 68.210938 55.402344 68.160156 55.296875 68.09375 55.199219 L 62.542969 46.871094 L 66.730469 40.585938 C 67.554688 39.351562 68.574219 38.671875 69.601562 38.671875 C 70.625 38.671875 71.636719 39.34375 72.453125 40.5625 L 82.40625 55.507812 L 86.949219 55.507812 C 86.902344 55.402344 86.851562 55.296875 86.785156 55.199219 Z M 75.625 38.449219 "/><path fill-rule="nonzero" fill="rgb(15.293884%, 66.667175%, 88.235474%)" fill-opacity="1" d="M 72.453125 76.847656 C 71.632812 78.082031 70.613281 78.761719 69.582031 78.761719 C 68.5625 78.757812 67.550781 78.085938 66.734375 76.867188 L 62.535156 70.558594 L 68.128906 62.164062 C 68.179688 62.085938 68.21875 62.003906 68.257812 61.921875 L 63.707031 61.921875 L 60.242188 67.121094 L 56.78125 61.921875 L 52.238281 61.921875 C 52.285156 62.027344 52.335938 62.132812 52.402344 62.230469 L 57.953125 70.558594 L 53.761719 76.847656 C 52.941406 78.082031 51.921875 78.757812 50.890625 78.761719 C 49.867188 78.761719 48.859375 78.085938 48.042969 76.867188 L 38.085938 61.921875 L 33.546875 61.921875 C 33.59375 62.027344 33.644531 62.132812 33.710938 62.230469 L 44.871094 78.980469 C 46.390625 81.265625 48.585938 82.574219 50.894531 82.574219 C 53.203125 82.574219 55.40625 81.257812 56.9375 78.960938 L 60.242188 74 L 63.5625 78.980469 C 65.082031 81.265625 67.277344 82.574219 69.582031 82.574219 C 71.894531 82.574219 74.097656 81.257812 75.628906 78.960938 L 86.820312 62.164062 C 86.871094 62.085938 86.910156 62.003906 86.949219 61.921875 L 82.398438 61.921875 Z M 72.453125 76.847656 "/></svg>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#partners">Partners</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>We invest early in companies built on the physical and data sciences.</h1>
+  </div>
+
+  <section id="about">
+    <div class="label">About</div>
+    <p class="body">
+      Mount Wilson Ventures backs founders at the earliest stages and stays
+      close as they build. We are a two-partner firm based in Pasadena.
+    </p>
+  </section>
+
+  <section id="portfolio">
+    <div class="label">Selected Investments from the Portfolio</div>
+    <div class="companies">
+      <a class="company" href="https://swegan.se/" target="_blank" rel="noopener">
+        <span class="nm">SweGaN</span>
+        <span class="ds">GaN-on-SiC epitaxial wafers for high-frequency and high-power electronics.</span>
+        <span class="go">Visit &#8599;</span>
+      </a>
+      <a class="company" href="https://www.cinderbio.com/" target="_blank" rel="noopener">
+        <span class="nm">CinderBio</span>
+        <span class="ds">Heat- and acid-stable enzymes from extremophiles for proteomics workflows.</span>
+        <span class="go">Visit &#8599;</span>
+      </a>
+      <a class="company" href="https://lilacsolutions.com/" target="_blank" rel="noopener">
+        <span class="nm">Lilac Solutions</span>
+        <span class="ds">Ion-exchange technology for direct lithium extraction from brine.</span>
+        <span class="go">Visit &#8599;</span>
+      </a>
+      <a class="company" href="https://www.zestbio.com/" target="_blank" rel="noopener">
+        <span class="nm">ZestBio</span>
+        <span class="ds">Conversion of agricultural waste into renewable specialty chemicals.</span>
+        <span class="go">Visit &#8599;</span>
+      </a>
+      <a class="company" href="https://papayapay.com/" target="_blank" rel="noopener">
+        <span class="nm">Papaya Payments</span>
+        <span class="ds">Mobile bill-pay that turns any paper bill into a one-tap payment.</span>
+        <span class="go">Visit &#8599;</span>
+      </a>
+      <a class="company" href="https://www.luminatehealth.com/" target="_blank" rel="noopener">
+        <span class="nm">Luminate Health</span>
+        <span class="ds">Patient engagement platform for clinical and hospital laboratories.</span>
+        <span class="go">Visit &#8599;</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="partners">
+    <div class="label">Partners</div>
+    <div class="ppl">
+      <div class="person">
+        <h3>Mike Giardello, PhD</h3>
+        <a class="li" href="https://www.linkedin.com/in/mikegiardello/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+      </div>
+      <div class="person">
+        <h3>Richard Weil, CFA</h3>
+        <a class="li" href="https://www.linkedin.com/in/richardweil1/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="col">
+      <h4>Contact</h4>
+      <a href="mailto:info@mountwilson.vc">info@mountwilson.vc</a>
+      <p>Pasadena, California</p>
+    </div>
+    <div class="fine">
+      &#169; Mount Wilson Ventures. Informational only; not an offer of securities.
+    </div>
+  </footer>
+
+</div>
+
+</body>
 </html>
